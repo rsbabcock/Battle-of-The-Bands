@@ -20,11 +20,12 @@
 // Your job is to write a function that accepts any band name as an argument. 
 // The function will increment a global variable by one each time it is invoked,
 
-let bandNumber = 0;
+let bandNumber = 1;
 
 const takeNumber = function (bandName) {
-    bandNumber =+ 1;
     console.log(`${bandNumber}. ${bandName}`);
+    bandNumber += 1;
 }
 
 takeNumber("UglyMugs");
+takeNumber("Crazy Monkeys");
